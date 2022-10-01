@@ -3,7 +3,7 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    run: jenkins
+    app: jenkins
   name: jenkins
   namespace: devops
 spec:
@@ -13,7 +13,7 @@ spec:
     targetPort: 8080
     nodePort: 32100
   selector:
-    run: jenkins
+    app: jenkins
   type: NodePort
 status:
   loadBalancer: {}
